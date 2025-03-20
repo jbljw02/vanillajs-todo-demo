@@ -6,14 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>VanillaJS TODO Demo</title>
-    <!-- CSS 파일 연결 -->
     <link rel="stylesheet" href="css/style.css">
-    <!-- 필요한 폰트 -->
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/todo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <main id="app">
+        <div class="todo-container">
+            <header class="todo-header">
+                <h1>To do List</h1>
+            </header>
+            <form class="todo-form">
+                <input type="text" placeholder="할 일을 입력하세요" required />
+                <button type="submit">추가</button>
+            </form>
+            <ul class="todo-list">
+                <li class="todo-item">
+                    <div class="todo-content">
+                        <input type="checkbox" class="todo-checkbox">
+                        <span class="todo-text">첫 번째 할 일</span>
+                    </div>
+                    <button class="delete-btn">삭제</button>
+                </li>
+                <li class="todo-item">
+                    <div class="todo-content">
+                        <input type="checkbox" class="todo-checkbox">
+                        <span class="todo-text">두 번째 할 일</span>
+                    </div>
+                    <button class="delete-btn">삭제</button>
+                </li>
+            </ul>
+        </div>
     </main>
 
     <script type="module" src="js/main.js"></script>
