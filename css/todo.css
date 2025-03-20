@@ -27,6 +27,10 @@ h1 {
 }
 
 /* 폼 스타일 */
+#todo-form-container {
+    width: 100%;
+}
+
 .todo-form {
     display: flex;
     flex-direction: row;
@@ -79,6 +83,10 @@ h1 {
 }
 
 /* 할 일 목록 스타일 */
+#todo-list-container {
+    width: 100%;
+}
+
 .todo-list {
     width: 100%;
     list-style: none;
